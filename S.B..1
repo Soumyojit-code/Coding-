@@ -1,0 +1,17 @@
+//check the leap year
+#include<stdio.h>
+#define size 5
+int main () {
+    int n,m;
+    printf("ENTER THE VALU OF FIRST YEAR:\n");
+    scanf("%d",&n);
+    printf("ENTER THE VALUE OF END YEAR\n");
+    scanf("%d",&m);
+    for(int i=n;i<=m;i++){
+        if(i%4==0||i%400==0 && i%100!=0){
+            printf("%d IS LEAP YEAR\n",i);
+        }else{
+            printf("%d IS NOT A LEAP YEAR\n",i);
+        }
+    }
+}
