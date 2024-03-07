@@ -1,0 +1,13 @@
+//add two integers using function.
+#include<stdio.h>
+  void sum(int *a,int *b,int *c);
+int  main(){
+   int num1,num2,total;
+   printf("ENTER TWO NUMBER:\n");
+   scanf("%d%d",&num1,&num2);
+  sum(&num1,&num2,&total);
+   printf("total=%d",total);
+return 0;}
+void sum(int *a,int *b,int *c){
+*c=*a+*b;
+}
