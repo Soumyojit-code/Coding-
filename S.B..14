@@ -1,0 +1,25 @@
+//calclute Least Common Multiple number of two numbes
+#include<stdio.h>
+int main()
+{
+    int a, b,max;
+    printf("ENTER THE FIRST NUMBER\n");
+    scanf("%d",&a);
+    printf("ENTER THE SECOND NUMBER\n");
+    scanf("%d",&b);
+    if(a>b){
+       max=a;
+    }else
+    {
+        max=b;
+    }
+    while(1) {
+        if(max%a==0 && max%b==0){
+            printf("%d IS THE LEST COMMON MULTIPLE NUMBER OF %d AND %d",max,a,b);
+            break;
+        }
+  max++;
+    }
+    return 0;
+    }
+
