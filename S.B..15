@@ -1,0 +1,14 @@
+//calclut your attendence.
+#include<stdio.h>
+int main(){
+    float i;
+    printf("ENTER TOTAL CLASS\n");
+    scanf("%f",&i);
+    float j;
+    printf("ENTER THE TOTAL CLASS THOSE YOU ATTEND\n");
+    scanf("%f",&j);
+    float c;
+    c=(100/i);
+    printf("%.2f%% IS YOUR TOTAL ATTANDENCE in parsentage\n ",c*j);
+    return 0;
+}
