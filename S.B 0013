@@ -1,0 +1,35 @@
+ /*ADDITION,SUBTRATION,MULTIPLICATION AND DIVISION USING FUNCTION POINTER */
+#include<stdio.h>
+#include<conio.h>
+int add(int,int);
+int sub(int, int);
+int mul(int,int);
+int div(int,int);
+int add(int a,int b)
+ {
+    printf("ADDITION= %d",a+b);
+ }
+ int sub(int a,int b)
+ {
+    printf("SUBTRACTION= %d",a-b);
+ }
+int mul(int a,int b){
+    printf("MULTIPLICATION= %d",a*b);
+}
+int div(int a,int b){
+    printf("DIVISION= %d",a/b);
+}
+int main()
+{
+    int a,b,ch;
+    int (*ptr[6])(int,int)={add,sub,mul,div };
+    printf("ENTER\n 0: FOR ADDITION\t 1: FOR SUBTRATION\t2: FOR MULTIPLICATION\t3: FOR DIVISION\n");
+    printf("ENTER YOUR CHOICE\n");
+    scanf("%d",&ch);
+    printf("ENTER TWO NUMBER\n");
+    scanf("%d%d",&a,&b);
+    (*ptr[ch])(a,b);
+}
+
+
+
