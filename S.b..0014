@@ -1,0 +1,15 @@
+//if else stament using c++
+#include<iostream>
+using namespace std;
+int main()
+{
+    int money;
+    cout<<"Enter you have how much money"<<endl;
+    cin>>money;
+    if(money==1000)
+
+        cout<<"cafe starbug"<<endl;
+        cout<<"let's go home"<<endl;
+
+
+}
