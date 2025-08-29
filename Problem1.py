@@ -1,0 +1,7 @@
+A=int(input('ENTER 1ST INTEGER '))
+B=int(input('ENTER 2ND INTEGER '))
+C=int(input('ENTER THE 3RD INTEGER '))
+if A==B:print("0")
+elif B==C:print("0")
+elif C==B:print("0")
+else:print("1")
