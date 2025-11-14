@@ -10,8 +10,6 @@ int sum(int m){
    printf("%d\n",n);
     sum(m-1);
 
- // printf("sum is = %d \n",n);
-
     }
 }
 int main(){
